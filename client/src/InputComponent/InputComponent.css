@@ -1,0 +1,39 @@
+.fixed-input-container{
+    position: fixed; 
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.rounded-input {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    height: 30px;
+    font-size: 15px;
+}
+
+.rounded-input::placeholder {
+    color: #a0a0a0;
+}
+[placeholder]{
+    text-overflow:ellipsis;
+}
+
+.submit-icon {
+    cursor: pointer;
+    font-size: 20px;
+    position: relative; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -30px;
+    color: #8CD881;
+    background-color: white;
+}
