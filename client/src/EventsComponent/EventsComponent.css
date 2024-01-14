@@ -1,0 +1,21 @@
+.events-container {
+    background-color: #333;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 35%;
+    border-radius: 8px;
+    display: inline-block;
+    overflow-y: auto;
+    max-height: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.singular-event-container {
+    background-color: #4B843D;
+    border-radius: 8px;
+    margin: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
