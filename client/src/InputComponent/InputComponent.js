@@ -3,6 +3,7 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import './InputComponent.css';
 import { FiArrowUpCircle } from "react-icons/fi";
+import toast from 'react-hot-toast';
 
 const InputComponent = ({ onPromptSubmit }) => {
     const [prompt, setPrompt] = useState('');
@@ -27,7 +28,14 @@ const InputComponent = ({ onPromptSubmit }) => {
         try {
             setPrompt('');
             let tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            // Loading toast
+            toast.loading('Loading...', {position: 'bottom-center',});
+
             const response = await axios.post('http://localhost:8080/api/process_prompt', { "prompt": prompt, "user": { "uuid": uuid, "new_user": newUser, "timezone": tz } });
+
+            // Dismiss loading toast
+            toast.dismiss()
 
             // No event detected
             if (!response.data.result.success){
