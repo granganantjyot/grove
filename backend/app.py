@@ -18,7 +18,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "ok"
+    return "<p>Server Running...</p>"
 
 
 @app.route('/api/get-events', methods=['POST'])
@@ -48,7 +48,7 @@ def process_prompt():
 
 
 def ner(prompt: str, user: dict):  # Named entity recognition (NER)
-    nlp_ner = spacy.load("./ner/model")
+
     doc = nlp_ner(prompt)
     date = []
     time = []
@@ -197,4 +197,6 @@ def ics(parsed_dates, parsed_times, description, user):
     }
 
 if __name__ == "__main__":
-    app.run(port=8080)
+    nlp_ner = spacy.load("./ner/model")
+    app.run(host="0.0.0.0", port=8080)
+
