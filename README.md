@@ -16,7 +16,7 @@ Try out Grove [here](https://d3c1t09rjq982a.cloudfront.net). You can reflect you
 
 Please note that after long periods of inactivity, the NLP model goes to sleep. If Grove notifies you of this, please wait 1-2 mins before resubmitting your prompt.
 
-There is a lot more planned for this project, and it is a WIP.
+Functionality to delete/update existing events is coming soon. There is a lot more planned for this project!
 
 
 ## Tech Stack
