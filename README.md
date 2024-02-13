@@ -12,7 +12,10 @@ You can give Grove prompts for your events. For example: "GitHub internship inte
 Grove generates an editable ICS calendar feed that you can subscribe to from any calendar client.
 
 ## How Can I Use It?
-Grove will be deployed soon.
+You can try out Grove [here](https://d3c1t09rjq982a.cloudfront.net)
+
+Please note that there is a lot more planned for this project, and it is a WIP.
+
 
 ## Tech Stack
 Python/Flask backend with React frontend. The custom NLP model was created with spaCy.
