@@ -12,7 +12,7 @@ You can give Grove prompts for your events. For example: "GitHub internship inte
 Grove generates an editable ICS calendar feed that you can subscribe to from any calendar client.
 
 ## How Can I Use It?
-You can try out Grove [here](https://d3c1t09rjq982a.cloudfront.net)
+You can try out Grove [here](https://d3c1t09rjq982a.cloudfront.net). You can reflect your Grove events in your favourite calendar platform by adding your unique ICS subscription/feed link. When you add new events, they update instantly in the calendar feed, but these changes may take time to reflect on your calendar platform depending on its sync time (Apple Calendar tends to have the quickest sync time).
 
 Please note that there is a lot more planned for this project, and it is a WIP.
 
